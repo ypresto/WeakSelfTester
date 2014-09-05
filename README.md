@@ -50,7 +50,7 @@ Uses weakSelf to call `parseResponse:` method.
 }
 ```
 
-Then, think about caller. You can thrown away after calling some methods of the model.
+Then, think about caller. You can throw away model instance after calling some methods.
 Instance of `FoobarManager` in below code will not be retained after `getInBackgroundWithWeakSelf` returns.
 
 ```objective-c
@@ -63,7 +63,7 @@ Instance of `FoobarManager` in below code will not be retained after `getInBackg
 }
 ```
 
-Now, something bad has happened...
+Now, something bad has been happened...
 No one retaines `FoobarManager` instance, because `FoobarManager` uses weakSelf.
 
 `__strong typeof(weakSelf) strongSelf = weakSelf; // nil!!`
