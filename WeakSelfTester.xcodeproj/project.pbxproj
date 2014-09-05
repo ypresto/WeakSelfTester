@@ -21,6 +21,7 @@
 		04358DB419B96D0E0078C0A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04358D9619B96D0E0078C0A5 /* UIKit.framework */; };
 		04358DBC19B96D0E0078C0A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04358DBA19B96D0E0078C0A5 /* InfoPlist.strings */; };
 		04358DBE19B96D0E0078C0A5 /* WeakSelfTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04358DBD19B96D0E0078C0A5 /* WeakSelfTesterTests.m */; };
+		04358DC919B96E350078C0A5 /* FoobarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04358DC819B96E350078C0A5 /* FoobarManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		04358DB919B96D0E0078C0A5 /* WeakSelfTesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeakSelfTesterTests-Info.plist"; sourceTree = "<group>"; };
 		04358DBB19B96D0E0078C0A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04358DBD19B96D0E0078C0A5 /* WeakSelfTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakSelfTesterTests.m; sourceTree = "<group>"; };
+		04358DC719B96E350078C0A5 /* FoobarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoobarManager.h; sourceTree = "<group>"; };
+		04358DC819B96E350078C0A5 /* FoobarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoobarManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				04358DA819B96D0E0078C0A5 /* ViewController.m */,
 				04358DAA19B96D0E0078C0A5 /* Images.xcassets */,
 				04358D9919B96D0E0078C0A5 /* Supporting Files */,
+				04358DC719B96E350078C0A5 /* FoobarManager.h */,
+				04358DC819B96E350078C0A5 /* FoobarManager.m */,
 			);
 			path = WeakSelfTester;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				04358DA919B96D0E0078C0A5 /* ViewController.m in Sources */,
 				04358DA319B96D0E0078C0A5 /* AppDelegate.m in Sources */,
+				04358DC919B96E350078C0A5 /* FoobarManager.m in Sources */,
 				04358D9F19B96D0E0078C0A5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
