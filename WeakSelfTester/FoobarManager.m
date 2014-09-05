@@ -21,8 +21,10 @@
 - (void)fetchAsyncWeakWithBlock:(void (^)(NSArray *foobars))callback {
     __weak typeof(self) weakSelf = self;
 
+    // mimicking async fetch from server
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSArray *foobars = [weakSelf parseResponse:@{@"foo": @"bar"}];
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        NSArray *foobars = [strongSelf parseResponse:@{@"foo": @"bar"}];
         NSLog(@"weakSelf: %@", weakSelf);
         callback(foobars);
     });
